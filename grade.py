@@ -13,7 +13,7 @@ def to_grade(score):
         return "F"
 
 def average(scores):
-    return round(sum(scores) / len(scores), 2)
+    return sum(scores) / len(scores) if scores else 0
 
 if __name__ == "__main__":
     scores = [85, 72, 64, 91]
